@@ -21,7 +21,7 @@ module ssr_cal #
             (
                 .real_part( real_part[DATA_WIDTH*(i+1)-1 : DATA_WIDTH*i] ),
                 .imag_part( imag_part[DATA_WIDTH*(i+1)-1 : DATA_WIDTH*i] ),
-                .out( real_part[2*DATA_WIDTH*(i+1)-1 : 2*DATA_WIDTH*i] )
+                .out( ssr[2*DATA_WIDTH*(i+1)-1 : 2*DATA_WIDTH*i] )
             );
         end
         

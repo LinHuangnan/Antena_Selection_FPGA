@@ -6,11 +6,11 @@ parameter DATA_WIDTH = 32;
 parameter ANTENA_NUM = 1;
 
 //Inputs
-wire [ANTENA_NUM*DATA_WIDTH-1:0] real_part;
-wire [ANTENA_NUM*DATA_WIDTH-1:0] imag_part;
+reg signed [ANTENA_NUM*DATA_WIDTH-1:0] real_part;
+reg signed [ANTENA_NUM*DATA_WIDTH-1:0] imag_part;
 
 //Outputs
-wire [2*ANTENA_NUM*DATA_WIDTH-1:0] ssr;
+wire signed [2*ANTENA_NUM*DATA_WIDTH-1:0] ssr;
 
 initial begin
     $from_myhdl(
